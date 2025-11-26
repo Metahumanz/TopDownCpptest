@@ -1,59 +1,23 @@
-﻿# Auto-Battle Sandbox – UE4 C++ Final Project
+﻿# UE4 C++ Git Workflow Test
 
-A minimal real-time auto-battler demo built with **Unreal Engine 4.27** and **C++**, developed as a final assignment for [Your Course Name]. The game features autonomous units that automatically navigate and attack enemy structures using UE4's AI and navigation systems.
+A minimal test project to validate the **Unreal Engine 4.27 + C++ + Git** workflow for our final assignment.
 
-> ✅ Meets all course requirements:  
-> - Written in **C++** (with Blueprint integration)  
-> - Uses **Git** for team collaboration  
-> - Fully functional Windows executable  
-> - Includes STL, C++11/14 features, and OOP design (inheritance & polymorphism)
+## ✅ Goals
+- Confirm C++ classes work with Blueprints  
+- Verify Git collaboration setup (3 members)  
+- Test build & packaging on Windows  
 
----
+## 🛠️ How to Run
+1. Clone this repo  
+2. Right-click `TestProject.uproject` → **Generate Visual Studio project files**  
+3. Open `.sln` in Visual Studio (Win64, Development Editor)  
+4. Press **Ctrl+F5** to compile and launch  
 
-## 🎮 Gameplay Overview
+> No gameplay yet — this is a technical prototype only.
 
-- Click the **"Spawn Warrior"** or **"Spawn Archer"** button to deploy units.
-- Units automatically pathfind to the enemy base using **NavMesh**.
-- Upon reaching attack range, they deal damage over time.
-- Destroy the red enemy base to win!
+## 📁 Key Folders
+- `/Source/` – C++ code (e.g., `ATestActor`)  
+- `/Content/` – Test blueprints and map  
+- `.gitignore` – Excludes Binaries, Saved, etc.
 
-This is a simplified prototype inspired by auto-battler mechanics (e.g., *Clash of Clans*), focusing on core systems rather than full gameplay depth.
-
----
-
-## 🛠️ Technical Features
-
-| Feature | Implementation |
-|--------|----------------|
-| **Core Architecture** | C++ classes (`AUnit`, `ABase`, `AGameMode`) with inheritance and virtual functions |
-| **AI & Navigation** | `AAIController` + `UNavigationSystemV1` + NavMesh Bounds Volume |
-| **Polymorphism** | `AWarrior` and `AArcher` override `Attack()` from base `AUnit` class |
-| **UI Integration** | UMG widgets call C++ functions via `UFUNCTION(BlueprintCallable)` |
-| **Modern C++** | `std::vector`, `auto`, `nullptr`, range-based loops |
-| **Resource Safety** | Input validation and null checks to prevent crashes |
-
----
-
-## 🧑‍💻 Team Members
-
-| Name | Role | Responsibilities |
-|------|------|------------------|
-| [Your Name] | Programmer | C++ core logic, damage system, game state |
-| [Teammate 1] | AI & Behavior | Unit AI, pathfinding, combat behavior |
-| [Teammate 2] | UI & Integration | UMG interface, scene setup, testing & packaging |
-
-> All members contributed C++ code and participated in Git-based collaboration.
-
----
-
-## ▶️ How to Run
-
-### Prerequisites
-- Windows 10/11
-- Visual Studio 2019 or 2022 (with C++ desktop development workload)
-- Unreal Engine **4.27** (installed via Epic Launcher)
-
-### From Source (Recommended for Grading)
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/AutoBattleSandbox.git
+© 2025 657220
